@@ -408,7 +408,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-title-topbar"] {
-    color:#a3a3a4;
+    color:#d1d5db;
     font-size:16px;
     font-weight: ligther;
 }
@@ -664,7 +664,7 @@ QPushButton[cssClass="btn-check-status-staking"] {
 
 QPushButton[cssClass="btn-check-text"] {
     color:#7f7c87;
-    background-color:#372A4C;
+    background-color:#3c3c3b;
     font-size:18px;
     border-bottom:2px solid #3c3c3b;
 }
