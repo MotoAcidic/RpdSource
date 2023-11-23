@@ -38,7 +38,10 @@ TopBar::TopBar(RPDCHAINGUI* _mainWindow, QWidget *parent) :
     /* Containers */
     ui->containerTop->setContentsMargins(10, 4, 10, 10);
 #ifdef Q_OS_MAC
-    ui->containerTop->load("://bg-dashboard-banner");
+    if (lightTheme) {
+        ui->containerTop->load("://bg-dashboard-banner-light");
+    } else {
+        ui->containerTop->load("://bg-dashboard-banner");
     setCssProperty(ui->containerTop,"container-topbar-no-image");
 #else
     ui->containerTop->setProperty("cssClass", "container-top");
