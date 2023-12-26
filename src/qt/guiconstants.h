@@ -32,8 +32,8 @@ static const bool DEFAULT_SPLASHSCREEN = true;
 /* Transaction list -- TX status decoration - default color */
 #define COLOR_BLACK QColor(60, 60, 59)
 /* Transaction list -- TX status decoration - conflicted */
-#define COLOR_CONFLICTED QColor(250, 250, 250)
-/* Transaction list -- TX status decoration - orphan (Light Gray #d1d5db) */
+#define COLOR_CONFLICTED QColor(209, 213, 219)
+/* Transaction list -- TX status decoration - orphan (RPD Light Gray #d1d5db) */
 #define COLOR_ORPHAN QColor(209, 213, 219)
 /* Transaction list -- TX status decoration - stake (RPD Orange #ff5533) */
 #define COLOR_STAKE QColor(255, 85, 51)
