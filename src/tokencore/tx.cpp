@@ -1824,6 +1824,17 @@ int CMPTransaction::logicMath_CreatePropertyFixed()
         return (PKT_ERROR_SP -72);
     }
 
+    // Check if the ticker corresponds to username
+    if (isUsername && name != "RNS") {
+        PrintToLog("%s(): rejected: property name must be 'RNS' when deploying a username ticker\n", __func__);
+        return (PKT_ERROR_SP -72);
+    }
+    
+    if (name == "RNS" && !isUsername) {
+        PrintToLog("%s(): rejected: property name 'RNS' can only be used with a username ticker\n", __func__);
+        return (PKT_ERROR_SP -74);
+    }
+
     // Subtoken validation logic
     if (isSub)
     {
